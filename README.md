@@ -2,8 +2,9 @@
 
 ### How I reproduced
 1. fresh project with `.gemset`, `.ruby-version`, and `.gitignore`
-2. `rails new . -d postgresql`
-3. `docker build --progress=plain -t rails-50402 .`
+2. `gem install rails -v 7.1.2`
+3. `rails new . -d postgresql`
+4. `docker build --progress=plain -t rails-50402 .`
 
 ```bash
 $ cat config/master.key
